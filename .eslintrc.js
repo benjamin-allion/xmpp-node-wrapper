@@ -17,6 +17,7 @@ module.exports = {
         "no-underscore-dangle": 'off',
         "comma-dangle": 'off',
         "no-use-before-define": 'off',
-        "linebreak-style": 0
+        "linebreak-style": 0,
+        "class-methods-use-this": 'off'
     }
 };
