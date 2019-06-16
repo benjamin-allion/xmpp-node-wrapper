@@ -1,0 +1,44 @@
+{
+  "name": "mqtt-node-helper",
+  "version": "1.0.0",
+  "description": "MQTT.js client library helper",
+  "contributors": [
+    {
+      "name": "mqtt-node-helper contributors",
+      "url": "https://github.com/benjamin-allion/mqtt-node-helper/graphs/contributors"
+    }
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env ENV_PATH=.env.testing jest",
+    "lint": "eslint \"./lib/**/*.js\" \"./config/**/*.js\" \"./test/**/*.js\"",
+    "lint:fix": "eslint --fix \"./lib/**/*.js\" \"./config/**/*.js\" \"./test/**/*.js\"",
+    "coverage": "cross-env ENV_PATH=.env.testing jest --coverage",
+    "coverage:codacy": "yarn coverage && cat ./coverage/lcov.info | codacy-coverage"
+  },
+  "keywords": [
+    "mqtt",
+    "helper",
+    "messaging",
+    "messenger"
+  ],
+  "author": "ALLION Benjamin",
+  "license": "MIT",
+  "dependencies": {
+    "@xmpp/client": "^0.7.3",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "codacy-coverage": "^3.4.0",
+    "jest": "^24.8.0"
+  }
+}
