@@ -1,0 +1,18 @@
+version: "3" # File version (docker-compose)
+services: 
+    mqtt-server: 
+        build: ./container/prosody-server
+        container_name: mqtt-server
+        volumes:
+            - ./container/volume-data/config:/etc/prosody # Prosody configuration directory
+            - ./container/volume-data/logs:/var/log/prosody # Directory for logs
+            - ./container/volume-data/certs:/etc/prosody/certs/ # Add your SSL certificates
+            - ./container/volume-data/storage:/var/lib/prosody/http_upload # Which let clients upload files over HTTP
+            #- ./container/volume-data/prosody-modules:/usr/lib/prosody/prosody-modules # Add community repository of modules
+        ports:
+            - 5222:5222
+            - 5269:5269
+            - 5347:5347
+            - 5280:5280
+            - 5281:5281
+    
