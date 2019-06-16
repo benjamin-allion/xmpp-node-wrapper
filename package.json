@@ -1,11 +1,11 @@
 {
-  "name": "mqtt-node-helper",
+  "name": "xmpp-node-helper",
   "version": "1.0.0",
-  "description": "MQTT.js client library helper",
+  "description": "XMPP client library helper",
   "contributors": [
     {
-      "name": "mqtt-node-helper contributors",
-      "url": "https://github.com/benjamin-allion/mqtt-node-helper/graphs/contributors"
+      "name": "xmpp-node-helper contributors",
+      "url": "https://github.com/benjamin-allion/xmpp-node-helper/graphs/contributors"
     }
   ],
   "main": "index.js",
@@ -17,7 +17,7 @@
     "coverage:codacy": "yarn coverage && cat ./coverage/lcov.info | codacy-coverage"
   },
   "keywords": [
-    "mqtt",
+    "xmpp",
     "helper",
     "messaging",
     "messenger"

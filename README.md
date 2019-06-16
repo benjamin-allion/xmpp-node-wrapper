@@ -1,2 +1,2 @@
-# mqtt-node-helper
-MQTT.js client library helper
+# xmpp-node-helper
+XMPP client library helper

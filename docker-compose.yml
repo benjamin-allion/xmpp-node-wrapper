@@ -1,8 +1,8 @@
 version: "3" # File version (docker-compose)
 services: 
-    mqtt-server: 
+    xmpp-server: 
         build: ./container/prosody-server
-        container_name: mqtt-server
+        container_name: xmpp-server
         volumes:
             - ./container/volume-data/config:/etc/prosody # Prosody configuration directory
             - ./container/volume-data/logs:/var/log/prosody # Directory for logs
