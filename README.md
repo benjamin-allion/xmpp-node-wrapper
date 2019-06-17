@@ -1,2 +1,2 @@
-# xmpp-node-helper
-XMPP client library helper
+# xmpp-node-wrapper
+XMPP client library wrapper
